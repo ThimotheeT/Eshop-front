@@ -12,8 +12,8 @@ const Navbar = () => {
     dark:text-brandWhite duration-200 relative z-40"
     >
       <div className="py-4 mb-4">
-        <div className="container flex justify-between items-center">
-          <div className="flex items-center gap-4">
+        <div className="container flex justify-between items-center gap-4">
+          <div className="flex items-center">
             <Logo />
             <Menu />
           </div>

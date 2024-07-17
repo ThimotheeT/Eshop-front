@@ -8,9 +8,7 @@ const DarkMode = () => {
     ? localStorage.getItem("theme"): "light");
 
     const element=document.documentElement;
-    //access to html
 
-    //set theme to localStorage and html element
     React.useEffect(() => {
         localStorage.setItem("theme", theme);
         if (theme == "dark"){
@@ -22,7 +20,7 @@ const DarkMode = () => {
         }
     })
 
-  return <div className="relative">
+  return <div className="relative left-2">
     <img 
     onClick={() => setTheme(theme == "dark" ? "light" : "dark")}
     src={LightButton} alt=""

@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaSearch } from "react-icons/fa";
 
 const Searchbar = () => {
   return (
@@ -7,7 +8,7 @@ const Searchbar = () => {
               <p className="text-xl text-gray-600 group-hover:text-primary
                 dark:text-gray-400 absolute top-1/2 -translate-y-1/2
                 right-3 duration-200"
-              >Searchbar</p>
+              ><FaSearch /></p>
     </div>
   )
 }
