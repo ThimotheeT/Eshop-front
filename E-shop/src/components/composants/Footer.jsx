@@ -1,8 +1,12 @@
 import React from "react";
-import { FaLinkedin, FaLocationArrow, FaMobileAlt, FaFacebookSquare } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaLocationArrow,
+  FaMobileAlt,
+  FaFacebookSquare,
+} from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { AiFillTikTok } from "react-icons/ai";
-
 
 const Footer = () => {
   return (
@@ -23,54 +27,75 @@ const Footer = () => {
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Necessitatibus ratione sed dicta ipsam laborum.
             </p>
-            <p className="text-gray-600 dark:text-gray-400 mt-4 flex justify-center">Made with love by Tim</p>
+            <p className="text-gray-600 dark:text-gray-400 mt-4 flex justify-center">
+              Made with love by Tim
+            </p>
             <a
               href="#"
               className=" bg-primary/90 text-brandWhite
-            py-2 mx-12 mt-4 text-sm rounded-full flex justify-center"
+            py-2 mx-12 mt-4 text-sm rounded-full flex justify-center cursor-pointer hover:bg-brandBlood hover:scale-105
+            duration-300"
             >
               Contact Us
             </a>
           </div>
 
-          {/* Map */}
+          {/* Links */}
           <div className="py-8 px-4 col-span-2 sm:col-auto">
-            <h1 className="text-xl font-bold sm:text-left mb-3 flex justify-center">Map</h1>
-          </div>
-  
-            {/* Company Adress */}
-            <div className="py-8 px-4 col-span-2 sm:col-auto ">
             <h1 className="text-xl font-bold sm:text-left mb-3 flex justify-center pb-8">
-                Address</h1>
-              <div>
-                <div className="flex items-center justify-center gap-3">
-                  <FaLocationArrow />
-                  <p>Paris, France</p>
-                </div>
-                <div className="flex items-center justify-center gap-3 mt-6">
-                  <FaMobileAlt />
-                  <p>+33 123456789</p>
-                </div>
-                {/* social links */}
-                <div className="flex items-center justify-center gap-3 mt-6">
-                    <a href="#" >
-                        <FaSquareInstagram className="text-3xl hover:text-primary duration-300" />
-                    </a>
-                    <a href="#" >
-                        <FaLinkedin className="text-3xl hover:text-primary duration-300" />
-                    </a>
-                    <a href="#" >
-                        <AiFillTikTok className="text-3xl hover:text-primary duration-300" />
-                    </a>
-                    <a href="#" >
-                        <FaFacebookSquare className="text-3xl hover:text-primary duration-300" />
-                    </a>
-                </div>
+              Links
+            </h1>
+            <div className="flex justify-center flex-col space-y-6">
+              <a href="#" className="flex justify-center cursor-pointer hover:text-primary hover:scale-125
+            duration-300">FAQ</a>
+              <a href="#" className="flex justify-center cursor-pointer hover:text-primary hover:scale-125
+            duration-300">About Us</a>
+              <a href="#" className="flex justify-center cursor-pointer hover:text-primary hover:scale-125
+            duration-300">Work with Us</a>
+            </div>
+          </div>
+
+          {/* Company Adress */}
+          <div className="py-8 px-4 col-span-2 sm:col-auto ">
+            <h1 className="text-xl font-bold sm:text-left mb-3 flex justify-center pb-8">
+              Address
+            </h1>
+            <div>
+              <div className="flex items-center justify-center gap-3">
+                <FaLocationArrow />
+                <p>Paris, France</p>
+              </div>
+              <div className="flex items-center justify-center gap-3 mt-6">
+                <FaMobileAlt />
+                <p>+33 123456789</p>
+              </div>
+              {/* social links */}
+              <div className="flex items-center justify-center gap-3 mt-6">
+                <a href="#">
+                  <FaSquareInstagram className="text-3xl hover:text-primary duration-300" />
+                </a>
+                <a href="#">
+                  <FaLinkedin className="text-3xl hover:text-primary duration-300" />
+                </a>
+                <a href="#">
+                  <AiFillTikTok className="text-3xl hover:text-primary duration-300" />
+                </a>
+                <a href="#">
+                  <FaFacebookSquare className="text-3xl hover:text-primary duration-300" />
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
+      {/* mentions */}
+      <div className="flex flex-row justify-evenly">
+        <a href="#" className="hover:text-gray-600 dark:hover:text-gray-400">Mentions légales</a>
+        <a href="#" className="hover:text-gray-600 dark:hover:text-gray-400">Politique de confidentialité</a>
+        <a href="#" className="hover:text-gray-600 dark:hover:text-gray-400">CGU</a>
+        <p>@ 2024 E-shop</p>
+      </div>
+    </div>
   );
 };
 
