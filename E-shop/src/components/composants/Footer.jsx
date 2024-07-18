@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { AiFillTikTok } from "react-icons/ai";
+import Button from "../details/Button";
 
 const Footer = () => {
   return (
@@ -27,17 +28,16 @@ const Footer = () => {
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Necessitatibus ratione sed dicta ipsam laborum.
             </p>
-            <p className="text-gray-600 dark:text-gray-400 mt-4 flex justify-center">
+            <p className="text-gray-600 dark:text-gray-400 mt-4 flex justify-center mb-4">
               Made with love by Tim
             </p>
-            <a
-              href="#"
-              className=" bg-primary/90 text-brandWhite
-            py-2 mx-12 mt-4 text-sm rounded-full flex justify-center cursor-pointer hover:bg-brandBlood hover:scale-105
-            duration-300"
-            >
-              Contact Us
-            </a>
+            <div className="flex justify-center">
+              <Button
+                text={"Contact Us"}
+                bgColor={"bg-primary"}
+                textColor={"text-white"}
+              />
+            </div>
           </div>
 
           {/* Links */}
@@ -46,12 +46,27 @@ const Footer = () => {
               Links
             </h1>
             <div className="flex justify-center flex-col space-y-6">
-              <a href="#" className="flex justify-center cursor-pointer hover:text-primary hover:scale-125
-            duration-300">FAQ</a>
-              <a href="#" className="flex justify-center cursor-pointer hover:text-primary hover:scale-125
-            duration-300">About Us</a>
-              <a href="#" className="flex justify-center cursor-pointer hover:text-primary hover:scale-125
-            duration-300">Work with Us</a>
+              <a
+                href="#"
+                className="flex justify-center cursor-pointer hover:text-primary hover:scale-125
+            duration-300"
+              >
+                FAQ
+              </a>
+              <a
+                href="#"
+                className="flex justify-center cursor-pointer hover:text-primary hover:scale-125
+            duration-300"
+              >
+                About Us
+              </a>
+              <a
+                href="#"
+                className="flex justify-center cursor-pointer hover:text-primary hover:scale-125
+            duration-300"
+              >
+                Work with Us
+              </a>
             </div>
           </div>
 
@@ -71,16 +86,16 @@ const Footer = () => {
               </div>
               {/* social links */}
               <div className="flex items-center justify-center gap-3 mt-6">
-                <a href="#">
+                <a href="https://www.instagram.com/" target="_blank">
                   <FaSquareInstagram className="text-3xl hover:text-primary duration-300" />
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/" target="_blank">
                   <FaLinkedin className="text-3xl hover:text-primary duration-300" />
                 </a>
-                <a href="#">
+                <a href="https://www.tiktok.com/" target="_blank">
                   <AiFillTikTok className="text-3xl hover:text-primary duration-300" />
                 </a>
-                <a href="#">
+                <a href="https://www.facebook.com/" target="_blank">
                   <FaFacebookSquare className="text-3xl hover:text-primary duration-300" />
                 </a>
               </div>
@@ -90,9 +105,15 @@ const Footer = () => {
       </div>
       {/* mentions */}
       <div className="flex flex-row justify-evenly">
-        <a href="#" className="hover:text-gray-600 dark:hover:text-gray-400">Mentions légales</a>
-        <a href="#" className="hover:text-gray-600 dark:hover:text-gray-400">Politique de confidentialité</a>
-        <a href="#" className="hover:text-gray-600 dark:hover:text-gray-400">CGU</a>
+        <a href="#" className="hover:text-gray-600 dark:hover:text-gray-400">
+          Mentions légales
+        </a>
+        <a href="#" className="hover:text-gray-600 dark:hover:text-gray-400">
+          Politique de confidentialité
+        </a>
+        <a href="#" className="hover:text-gray-600 dark:hover:text-gray-400">
+          CGU
+        </a>
         <p>@ 2024 E-shop</p>
       </div>
     </div>

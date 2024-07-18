@@ -8,9 +8,9 @@ export default {
   theme: {
     extend: {
       colors:{
-        primary: "#ff0000",
-        brandBlood:"#950101",
-        brandBrown:"#3D0000",
+        primary: "#00AD85",
+        brandGrey:"#393E46",
+        brandBlue:"#00FFF5",
         brandBlack:"#000000",
         brandWhite:"#eeeeee",
       },
