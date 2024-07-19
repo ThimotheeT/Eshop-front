@@ -2,12 +2,12 @@ import React from 'react'
 import Heading from '../details/Heading'
 import ProductCard from '../details/ProductCard'
 
-import Img1 from "../../assets/product/p-1.jpg";
-import Img2 from "../../assets/product/p-2.jpg";
-import Img3 from "../../assets/product/p-3.jpg";
-import Img4 from "../../assets/product/p-4.jpg";
-import Img5 from "../../assets/product/p-5.jpg";
-import Img6 from "../../assets/product/p-9.jpg";
+import Img1 from "../../assets/product/001435742_101.avif";
+import Img2 from "../../assets/product/001488292_101.avif";
+import Img3 from "../../assets/product/air-force-1-low-stussy-fossil-999639.webp";
+import Img4 from "../../assets/product/balenciaga-sneaker-track-blanche-en-maille-et-nylon.jpg";
+import Img5 from "../../assets/product/chaussure-de-tennis-pour-surface-dure-gp-challenge-pro-pour-nTgJRw.png";
+import Img6 from "../../assets/product/small_nike_dunk_low_kermit_dj6188_301_ba891cc26e.webp";
 import Img7 from "../../assets/product/p-7.jpg";
 
 const ProductsData = [
@@ -80,8 +80,6 @@ const Products = () => {
           <Heading title="Our Best Sellers"
           subtitle={"Explore Our Products"} />
           {/* Body section */}
-          <ProductCard data={ProductsData} />
-          <ProductCard data={ProductsData2} />
           <ProductCard data={ProductsData} />
           <ProductCard data={ProductsData2} />
         </div>

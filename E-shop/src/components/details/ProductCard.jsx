@@ -15,7 +15,7 @@ const ProductCard = ({ data }) => {
           data-aos-delay={data.aosDelay}
           className="" key={data.id}>
             <div 
-            className="relative group">
+            className="relative group bg-brandWhite rounded-lg">
               <img
                 src={data.img}
                 alt=""
