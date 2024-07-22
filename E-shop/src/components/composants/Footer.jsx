@@ -29,7 +29,7 @@ const Footer = () => {
               Necessitatibus ratione sed dicta ipsam laborum.
             </p>
             <p className="text-gray-600 dark:text-gray-400 mt-4 flex justify-center mb-4">
-              Made with love by Tim
+              Made by Tim
             </p>
             <div className="flex justify-center">
               <Button

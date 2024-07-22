@@ -1,6 +1,7 @@
 import React from "react";
 import Menu from "../details/Menu";
 import Searchbar from "../details/Searchbar";
+import Cart from "../details/Cart";
 import Profil from "../details/Profil";
 import DarkMode from "../details/DarkMode";
 import Logo from "../details/Logo";
@@ -19,6 +20,7 @@ const Navbar = () => {
           </div>
           <div className="flex justify-between items-center gap-4">
             <Searchbar />
+            <Cart />
             <Profil />
             <div>
               <DarkMode />
