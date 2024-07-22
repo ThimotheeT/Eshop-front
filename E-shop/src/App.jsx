@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="bg-brandWhite dark:bg-brandBlack dark:text-brandWhite
-    duration-200 overflow-hidden">
+    duration-200 overflow-hidden font-poppins">
       <Navbar />
       <Home />
       <Footer />

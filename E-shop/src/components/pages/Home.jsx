@@ -17,8 +17,8 @@ const BannerData = {
 const Home = () => {
   return (
     <div>
-      <Products />
       <Banner data={BannerData} />
+      <Products />
     </div>
   )
 }
