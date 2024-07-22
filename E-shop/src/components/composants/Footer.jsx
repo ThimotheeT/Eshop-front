@@ -8,6 +8,7 @@ import {
 import { FaSquareInstagram } from "react-icons/fa6";
 import { AiFillTikTok } from "react-icons/ai";
 import Button from "../details/Button";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -16,14 +17,13 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 pb-10 pt-5">
           {/* company details */}
           <div className="py-8 px-4 col-span-2 sm:col-auto">
-            <a
-              href="#"
+            <Link to="/"
               className="text-primary
                   font-semibold tracking-widest 
                   text-2xl uppercase sm:text-3xl flex justify-center"
             >
               E-Shop
-            </a>
+            </Link>
             <p className="text-gray-600 dark:text-gray-400 px-4 pt-3 flex justify-center">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Necessitatibus ratione sed dicta ipsam laborum.
@@ -106,10 +106,10 @@ const Footer = () => {
       {/* mentions */}
       <div className="flex flex-row justify-evenly">
         <a href="#" className="hover:text-gray-600 dark:hover:text-gray-400">
-          Mentions légales
+          Legal Notice
         </a>
         <a href="#" className="hover:text-gray-600 dark:hover:text-gray-400">
-          Politique de confidentialité
+          Privacy Policy
         </a>
         <a href="#" className="hover:text-gray-600 dark:hover:text-gray-400">
           CGU

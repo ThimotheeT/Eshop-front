@@ -4,13 +4,13 @@ import { FaCaretDown } from "react-icons/fa";
 const DropdownLinks = [
   {
     id: 1,
-    name: "Category",
-    link: "/#",
+    name: "Categories",
+    link: "/categories",
   },
   {
     id: 2,
-    name: "Product",
-    link: "/#",
+    name: "Products",
+    link: "/products",
   },
 ];
 

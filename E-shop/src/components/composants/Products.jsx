@@ -39,32 +39,29 @@ const ProductsData = [
       price: "220",
       aosDelay: "600",
     },
-  ];
-  
-  const ProductsData2 = [
     {
-      id: 1,
+      id: 5,
       img: Img5,
       title: "Boat Headphone",
       price: "120",
       aosDelay: "0",
     },
     {
-      id: 2,
+      id: 6,
       img: Img6,
       title: "Rocky Moutain",
       price: "420",
       aosDelay: "200",
     },
     {
-      id: 3,
+      id: 7,
       img: Img7,
       title: "Goggles",
       price: "320",
       aosDelay: "400",
     },
     {
-      id: 4,
+      id: 8,
       img: Img5,
       title: "Printed",
       price: "220",
@@ -81,7 +78,6 @@ const Products = () => {
           subtitle={"Explore Our Products"} />
           {/* Body section */}
           <ProductCard data={ProductsData} />
-          <ProductCard data={ProductsData2} />
         </div>
       </div>
     )

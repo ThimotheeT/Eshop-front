@@ -1,5 +1,6 @@
 import React from "react"
 import Button from "../details/Button"
+import { Link } from "react-router-dom";
 
 const ProductCard = ({ data }) => {
   return (
@@ -35,8 +36,8 @@ const ProductCard = ({ data }) => {
               </div>
             </div>
             <div className="leading-7">
-              <a href="#" className="cursor-pointer hover:text-primary"><h2 className="font-semibold">{data.title}</h2></a>
-              <h2 className="font-bold">${data.price}</h2>
+              <Link to={"/product?id="+ data.id} className="cursor-pointer hover:text-primary"><h2 className="font-semibold">{data.title}</h2></Link>
+              <h2 className="font-bold mb-8">${data.price}</h2>
             </div>
           </div>
         ))}

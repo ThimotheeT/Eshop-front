@@ -1,6 +1,7 @@
 import React from 'react'
 import Products from '../composants/Products'
 import Banner from '../composants/Banner';
+import Services from '../details/Services';
 import Img1 from '../../assets/product/314212337704_02.webp';
 
 const BannerData = {
@@ -19,6 +20,7 @@ const Home = () => {
     <div>
       <Banner data={BannerData} />
       <Products />
+      <Services />
     </div>
   )
 }
