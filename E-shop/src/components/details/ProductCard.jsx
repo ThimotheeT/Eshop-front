@@ -36,7 +36,7 @@ const ProductCard = ({ data }) => {
               </div>
             </div>
             <div className="leading-7">
-              <Link to={"/product?id="+ data.id} className="cursor-pointer hover:text-primary"><h2 className="font-semibold">{data.title}</h2></Link>
+              <Link to={`/product/${data.id}`} className="cursor-pointer hover:text-primary"><h2 className="font-semibold">{data.title}</h2></Link>
               <h2 className="font-bold mb-8">${data.price}</h2>
             </div>
           </div>

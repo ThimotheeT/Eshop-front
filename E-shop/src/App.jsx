@@ -36,7 +36,7 @@ function App() {
               {/* URL vers la page des produits */}
               <Route path="/products" element={<Allproducts />} />
               {/* URL vers la page d'un produit */}
-              <Route path="/product" element={<Product />} />
+              <Route path="/product/:id" element={<Product />} />
               {/* URL vers la page des categories */}
               <Route path="/categories" element={<Categories />} />
               {/* URL vers la page du profil */}
