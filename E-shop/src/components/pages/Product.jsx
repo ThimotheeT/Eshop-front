@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Productdetail from '../composants/Productdetail';
 import { useParams } from 'react-router-dom';
 
@@ -87,6 +87,11 @@ const ProductsData = [
 ];
 
 const Product = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { id } = useParams();
   const selectedProduct = ProductsData.find((product) => product.id === parseInt(id));
 

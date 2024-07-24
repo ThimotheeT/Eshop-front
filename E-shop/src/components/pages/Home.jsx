@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Products from '../composants/Products'
 import Banner from '../composants/Banner';
 import Services from '../details/Services';
@@ -16,6 +16,11 @@ const BannerData = {
 };
 
 const Home = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <Banner data={BannerData} />
