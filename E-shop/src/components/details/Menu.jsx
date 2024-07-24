@@ -12,6 +12,11 @@ const DropdownLinks = [
     name: "Products",
     link: "/products",
   },
+  {
+    id: 3,
+    name: "LogIn/SignUp",
+    link: "/connexion",
+  },
 ];
 
 const Menu = () => {
