@@ -12,6 +12,7 @@ import SignupForm from "../src/components/composants/SignupForm";
 import Footer from "../src/components/composants/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Editprofil from "./components/pages/Editprofil";
 
 function App() {
   React.useEffect(() => {
@@ -49,6 +50,8 @@ function App() {
                             </Route>
               {/* URL vers la page du profil */}
               <Route path="/profil" element={<Profil />} />
+              {/* URL vers la page de modif profil */}
+              <Route path="/editprofil" element={<Editprofil />} />
             </Routes>
           </main>
           <Footer />

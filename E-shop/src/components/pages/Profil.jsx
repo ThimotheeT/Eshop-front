@@ -1,8 +1,11 @@
 import React from 'react'
+import Profilcard from '../composants/Profilcard'
 
 const Profil = () => {
   return (
-    <div>Profil</div>
+    <div>
+      <Profilcard />
+    </div>
   )
 }
 

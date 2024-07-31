@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../details/Button";
+import { Link } from "react-router-dom";
 
 const SignupForm = () => {
   return (
@@ -48,13 +49,13 @@ const SignupForm = () => {
           className="rounded-2xl text-center dark:text-brandBlack" />
         </label>
 
-        <div className="card-actions justify-start mt-3">
+        <Link to="/profil" className="card-actions justify-start mt-3">
           <Button
             text={"SignUp"}
             bgColor={"bg-primary"}
             textColor={"text-white"}
           />
-        </div>
+        </Link>
       </form>
     </div>
   );

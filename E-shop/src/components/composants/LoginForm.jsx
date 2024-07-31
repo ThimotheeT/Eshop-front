@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../details/Button";
+import { Link } from "react-router-dom";
 
 const LoginForm = () => {
   return (
@@ -32,13 +33,13 @@ const LoginForm = () => {
           />
         </label>
 
-        <div className="card-actions justify-start mt-3">
+        <Link to="/profil" className="card-actions justify-start mt-3">
           <Button
             text={"LogIn"}
             bgColor={"bg-primary"}
             textColor={"text-white"}
           />
-        </div>
+        </Link>
       </form>
     </div>
   );
