@@ -19,7 +19,7 @@ const Profilcard = () => {
       <div className="flex m-auto my-6 w-[60%] h-auto">
         <div className="flex m-auto flex-col">
           <h1 className="text-center font-semibold text-xl sm:text-2xl text-primary">
-            Profil
+            Profile
           </h1>
           <br />
           <div>
@@ -56,7 +56,7 @@ const Profilcard = () => {
           <br />
           <Link to="/editprofil" className="mx-8 text-center">
             <Button
-              text={"Edit Profil"}
+              text={"Edit Profile"}
               bgColor={"bg-primary"}
               textColor={"text-white"}
             />
