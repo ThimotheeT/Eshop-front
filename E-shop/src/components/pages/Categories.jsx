@@ -1,8 +1,11 @@
 import React from 'react'
+import Gridcategories from '../composants/Gridcategories'
 
 const Categories = () => {
   return (
-    <div>Categories</div>
+    <div>
+      <Gridcategories />
+    </div>
   )
 }
 

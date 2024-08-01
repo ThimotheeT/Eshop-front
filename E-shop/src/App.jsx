@@ -13,6 +13,7 @@ import Footer from "../src/components/composants/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Editprofil from "./components/pages/Editprofil";
+import Cart from "./components/pages/Cart";
 
 function App() {
   React.useEffect(() => {
@@ -52,6 +53,8 @@ function App() {
               <Route path="/profil" element={<Profil />} />
               {/* URL vers la page de modif profil */}
               <Route path="/editprofil" element={<Editprofil />} />
+              {/* URL vers la page du panier */}
+              <Route path="/cart" element={<Cart />} />
             </Routes>
           </main>
           <Footer />

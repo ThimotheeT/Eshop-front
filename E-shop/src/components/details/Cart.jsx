@@ -1,10 +1,12 @@
 import React from 'react';
 import { FaShoppingCart } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
   return (
     <div>
         {/*Cart-button*/}
+        <Link to="/cart">
         <button className="relative p-3" >
               <FaShoppingCart
                 className="text-xl text-gray-600 hover:text-primary
@@ -18,6 +20,7 @@ const Cart = () => {
                 2
               </div>
             </button>
+            </Link>
     </div>
   )
 }
